@@ -1,2 +1,2 @@
 # My-Portfolio
-A portfolio showcasing myself 
+A portfolio showcasing myself. 
