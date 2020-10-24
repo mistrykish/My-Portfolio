@@ -1,0 +1,205 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 4s;
+    padding: 40px 100px;
+  }
+  
+  header.sticky {
+    padding: 5px 100px;
+    background-color: #fff;
+  }
+  
+  header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    transition: 4s;
+  }
+  
+  header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header ul li {
+    position: relative;
+    list-style: none;
+  }
+  
+  header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 2s;
+  }
+  
+  /* a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after {
+    width: 100%;
+    left: 0;
+  } */
+  
+  header.sticky ul li a:after {
+    background: black;
+  }
+  
+  header.sticky .logo,
+  header.sticky ul li a {
+    color: #000;
+    font-weight: 100;
+  }
+  
+  .nav {
+    -webkit-transition: left 0.5s ease;
+    -moz-transition: left 0.5s ease;
+    -ms-transition: left 0.5s ease;
+    -o-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+    background: grey;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    height: 100vh;
+    left: -20rem;
+    padding: 6rem 2rem 2rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 20rem;
+    z-index: 1;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .nav.expanded {
+    left: 0;
+  }
+  
+  .nav ul {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  .nav-toggle:hover {
+    opacity: 0.8;
+  }
+  
+  .nav-toggle .nav-toggle-bar,
+  .nav-toggle .nav-toggle-bar::after,
+  .nav-toggle .nav-toggle-bar::before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: white;
+    content: "";
+    height: 0.4rem;
+    width: 100%;
+  }
+  
+  .nav-toggle .nav-toggle-bar {
+    margin-top: 0;
+  }
+  
+  .nav-toggle .nav-toggle-bar::after {
+    margin-top: 0.8rem;
+  }
+  
+  .nav-toggle .nav-toggle-bar::before {
+    margin-top: -0.8rem;
+  }
+  
+  .nav-toggle.expanded .nav-toggle-bar {
+    background: transparent;
+  }
+  
+  .nav-toggle.expanded .nav-toggle-bar::after,
+  .nav-toggle.expanded .nav-toggle-bar::before {
+    background: white;
+    margin-top: 0;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .header {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    header.sticky {
+      display: none;
+    }
+  
+    header ul {
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 300px) {
+    .nav-toggle {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      cursor: pointer;
+      height: 2rem;
+      left: 2rem;
+      position: fixed;
+      top: 41px;
+      width: 3.6rem;
+      z-index: 2;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .nav-toggle {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      cursor: pointer;
+      height: 2rem;
+      left: 2rem;
+      position: fixed;
+      top: 2rem;
+      width: 3.6rem;
+      z-index: 2;
+      display: none;
+    }
+  }

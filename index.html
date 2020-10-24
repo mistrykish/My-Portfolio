@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Kishan Mistry | Web developer 👨‍💻 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+    <!--scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script src="https://kit.fontawesome.com/27d3030491.js" crossorigin="anonymous"></script>
+    <script src="js/nav-scroll/nav.js"></script>
+    <script src="js/typed-effect/type.js"></script>
+
+    <!-- stlye sheets -->
+    <link rel="stylesheet" media="screen" href="css/body-and-footer.css" />
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/particles.css">
+    <link rel="stylesheet" href="css/typed.css">
+    <link rel="stylesheet" href="css/arrow-animation.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/main-content.css">
+  </head>
+
+  <body>
+    <!-- particles.js container -->
+    <div id="particles-js">
+
+      <header>
+          <a href="#" class="logo"> Kishan </a>
+          <ul>
+            <li><a href="#home">About</a></li>
+            <li><a href="#about">My Skillset</a></li>
+            <li><a href="#service">Projects </a></li>
+            <li><a href="#contact">My Socials</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- responsive navbar -->
+      <div class="nav-toggle">
+        <div class="nav-toggle-bar"></div>
+      </div>
+    
+      <nav id="nav" class="nav">
+        <ul>
+          <li><a href="#home">About</a></li>
+          <li><a href="#about">My Skillset</a></li>
+          <li><a href="#service">Projects </a></li>
+          <li><a href="#contact">My Socials</a></li>
+        </ul>
+      </nav>
+
+      <!-- hamburger script -->
+      <script type="text/javascript">
+        (function() {
+
+        let hamburger = {
+        nav: document.querySelector('#nav'),
+        navToggle: document.querySelector('.nav-toggle'),
+
+        initialize() {
+          this.navToggle.addEventListener('click', () => { this.toggle(); });
+        },
+
+        toggle() {
+          this.navToggle.classList.toggle('expanded');
+          this.nav.classList.toggle('expanded');
+        },
+      };
+
+      hamburger.initialize();
+
+      }());
+      </script>
+
+      <div class="fade-in">
+        <div class="banner">
+          <div class="typed_wrap">
+            <h1><span class="typed"></span></h1>
+          </div>
+        </div>
+      </div>
+
+
+      <a href="#home">
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+    </div>
+
+      <section id="home">
+        <h1 id="aboutme">About me 👨‍💻</h1>
+    
+        <p class="lead">
+          Thanks for joining me, as you may know, my name is Kishan. 
+          My interest in web development began in high school, where
+          I developed basic websites using Dreamweaver. I wanted to learn
+          more, but web development wasn't emphasised at college, so I
+          decided to try something new and went for computer networking.
+          from there I started to develop an interest and learned a lot of
+          interesting topics such as protocols, firewalls, NAT, and
+          subnetting just to name a few.
+        </p>
+
+        <p class="lead">
+          Currently, I am pursuing a degree in software engineering at the
+          University of Bradford. My goal is to become a back-end developer
+          specialising in the MERN stack, however, web development isn't the
+          only career of my interest. IoT is something I want specialise in as
+          well since you can create a lot of cool things with electronics and
+          programming, the only limit is your imagination.   
+        </p>
+      </section>
+
+      <section id="about">
+        <h1 id="skillset">My SkillSet ⚒️ </h1>
+        <div class="container-1">
+          <div class="box-1">
+
+            <h2>languages and technologies I ❤️ using</h2>
+            <br>
+
+            <div class="grid-container">
+              <div class="item"> <img src="images/html.png" alt="html logo" width="50%"></div>
+              <div class="item"> <img src="images/css.png" alt="css logo" width="50%"></div>
+              <div class="item"> <img src="images/js.png" alt="javascript logo" width="50%"></div>  
+              <div class="item"> <img src="images/java.png" alt="java logo" width="50%"></div>
+              <div class="item"> <img src="images/sourcetree.png" alt="sourcetree logo" width="50%"></div>
+              <div class="item"> <img src="images/postman.png" alt="postman logo" width="50%"></div>
+              <div class="item"> <img src="images/git.png" alt="git logo" width="50%"></div>
+              <div class="item"> <img src="images/github.png" alt="github logo" width="50%"></div>
+              <div class="item"> <img src="images/mysql.png" alt="mysql logo" width="80%"></div>
+              <div class="item"> <img src="images/python.png" alt="python logo" width="50%"></div>
+            </div>
+        </div>
+
+        <div class="vl"></div>
+        
+        <div class="box-2">
+          <h2>languages and technologies next on my 📋 </h2>
+          <br>
+          <div class="grid-container-1">
+            <div class="item"> <img src="images/mongo.png" alt="mongo logo" width="59%"></div>
+            <div class="item"> <img src="images/express.png" alt="express logo" width="59%"></div>
+            <div class="item"> <img src="images/react.png" alt="react logo" width="59%"></div>  
+            <div class="item"> <img src="images/node.png" alt="node logo" width="59%"></div>
+            <div class="item"> <img src="images/heroku.png" alt="heroku logo" width="55%"></div>
+            <div class="item"> <img src="images/aws.png" alt="amazon web service logo" width="59%"></div>
+            <div class="item"> <img src="images/sass.png" alt="sass logo" width="59%"></div>
+            <div class="item"> <img src="images/typescript.png" alt="typescript logo" width="59%"></div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section id="service">
+        <h1 id="projects">Projects 💡</h1>
+
+        <div class="cards">
+          <div class="card">
+            <i id="start" class="fas fa-laptop-code fa-6x"></i>
+            <div class="text">
+              <h3 class="sub"> DesiSpice </h3>
+              <p>This web application is for an indian resturant called Desi Spice. </p>
+              <h3 class="sub"> Technologies used:</h3>
+                <img src="images/html.png" width="15%">
+                <img src="images/css.png" width="15%">
+                <img src="images/js.png" width="17%">
+                <br>
+               <a href="https://github.com/mistrycodes/Desi-Spice">
+              <i id="github" class="fab fa-github fa-5x" style="color: black;" ></i></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <i id="start" class="fas fa-laptop-code fa-6x"></i>
+            <div class="text">
+              <h3 class="sub"> Regex password validator </h3>
+              <p>This is a project that I did for fun when learning about
+                regex. In order to make it funny, I added a sound library, 
+                which mean't a funny sound would play if the password didnt meet the
+                 required standard.</p>
+
+                <h3 class="sub"> Technologies used:</h3>
+                  <img src="images/java.png" width="15%">
+                <br>
+                <a href="https://github.com/mistrycodes/regex-password-validator">
+                <i id="github" class="fab fa-github fa-5x" style="color: black;" ></i></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <i id="start" class="fas fa-laptop-code fa-6x"></i>
+            <div class="text">
+              <h3 class="sub"> Regex password validator (Python edition) </h3>
+              <p> When I was learning python, I thought it would be a good idea to replicate the Java regex password validator,
+                 into python, with few added extras.</p>
+
+                <h3 class="sub"> Technologies used:</h3>
+                <img src="images/python.png" width="15%">
+                <br>
+                <a href="https://github.com/mistrycodes/Regex-password-validator-python-edition-">
+                <i id="github" class="fab fa-github fa-5x" style="color: black;"></i></a>
+            </div>
+          </div>
+        </div>
+
+     
+      </section>
+
+      <section id="contact">
+        <h1 id="contact-heading">Lets get connected 🔌</h1>
+
+        <div class="icon-container">
+        <div class="icons-1">
+          
+          <a class="icon-link" href="https://github.com/mistrycodes">
+            <i class="fab fa-github fa-6x"></i></a>
+        </div>
+
+        <div class="icons-2">
+          <a class="icon-link" href="https://www.linkedin.com/in/kishan-mistry-97a263165/">
+            <i class="fab fa-linkedin fa-6x"></i></a>
+        </div>
+
+        <div class="icons-3">
+          <a class="icon-link" href="https://www.instagram.com/mistry_net/">
+            <i class="fab fa-instagram fa-6x"></i></a> 
+        </div>
+      </div>
+      </section>
+
+      
+      <footer class="end">
+        <h2> Made with 🧡 by Kishan Mistry | <a href="https://github.com/mistrycodes">@mistrycodes</a> </h2>
+        <h2>Special thanks to Matt Boldt for creating typed.js
+          <br>
+          <a href="https://mattboldt.com/">mattboldt.com</a>
+        </h2>
+      </footer>
+  
+    <!-- scripts (only works if placed here, not at the <head>)-->
+    <script src="js/particles/particles.js"></script>
+    <script src="js/particles/app.js"></script>
+  </body>
+</html>

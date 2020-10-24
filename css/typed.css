@@ -1,0 +1,58 @@
+.typed::after {
+    content: "|";
+    display: inline;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+  
+  /*Removes cursor that comes with typed.js*/
+  .typed-cursor {
+    opacity: 0;
+    display: inline-block;
+  }
+  /*Custom cursor animation*/
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @media only screen and (min-width: 300px) {
+    .typed {
+      font-size: 34px;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .typed {
+      font-size: 80px;
+    }
+  }
